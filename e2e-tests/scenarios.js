@@ -64,7 +64,7 @@ describe('PhoneCat Application', function() {
       element.all(by.css('.phones li a')).first().click();
       expect(browser.getLocationAbsUrl()).toBe('/phones/nexus-s');
     });
-    
+
   });
 
   describe('View: Phone detail', function() {
@@ -73,8 +73,8 @@ describe('PhoneCat Application', function() {
       browser.get('index.html#!/phones/nexus-s');
     });
 
-    it('should display placeholder page with `phoneId`', function() {
-      expect(element(by.binding('$ctrl.phoneId')).getText()).toBe('nexus-s');
+    it('should display the `nexus-s` page', function() {
+      expect(element(by.binding('$ctrl.phone.name')).getText()).toBe('Nexus S');
     });
 
   });

@@ -5,7 +5,7 @@ angular.
   module('phoneDetail').
     component('phoneDetail', {
       templateUrl: 'phone-detail/phone-detail.template.html',
-      controller: ['$http, $routeParams',
+      controller: ['$http', '$routeParams',
         function PhoneDetailController($http, $routeParams) {
           var self = this;
 

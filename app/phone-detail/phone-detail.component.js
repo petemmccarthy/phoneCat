@@ -2,8 +2,8 @@
 
 // Register `phoneDetail` componeent, along with its associated controller and template
 angular.
-  modile('phoneDetail').
-    component('phoneDetail'), {
+  module('phoneDetail').
+    component('phoneDetail', {
       template: 'TBD: Detail view for <span>{{$ctrl.phoneId}}</span>',
       controller: ['$routeParams',
         function PhoneDetailController($routeParams) {

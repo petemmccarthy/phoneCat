@@ -2,7 +2,7 @@
 
 // Define the 'phonecatApp' module
 angular.module('phonecatApp', [
-  // ...which depends on the `phonList` module
+  'ngAnimate',
   'ngRoute',
   'core',
   'phoneDetail',
